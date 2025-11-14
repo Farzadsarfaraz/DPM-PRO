@@ -73,41 +73,10 @@ npm install
 npm run dev
 
 
-
-
-
-
-
 **Architecture Diagram**
- ┌──────────────────────────┐
- │        Frontend          │
- │     (React SPA)          │
- │                          │
- │ • Record audio (MediaRecorder) 
- │ • Speech-to-text preview         
- │ • Send audio + email               
- │ • Show corrected text               
- │ • Generate corrected audio (TTS)    
- └──────────────┬───────────┘
-                │ POST /upload
-                ▼
- ┌──────────────────────────┐
- │         Backend          │
- │    (Node.js + Express)   │
- │                          │
- │ • Receive audio upload
- │ • Receive email + transcript
- │ • Call LanguageTool API
- │ • Return corrected text
- └──────────────┬───────────┘
-                │
-                ▼
- ┌──────────────────────────┐
- │     Grammar Service      │
- │     (LanguageTool API)   │
- │ • Fix grammar mistakes    │
- │ • Return corrected text    │
- └──────────────────────────┘
+
+<img width="464" height="652" alt="Screenshot 2025-11-14 024149" src="https://github.com/user-attachments/assets/7b1f4508-324c-4ca9-9de4-0734f4ab05c6" />
+
 
 
 
