@@ -76,5 +76,46 @@ npm run dev
 <img width="464" height="652" alt="Screenshot 2025-11-14 024149" src="https://github.com/user-attachments/assets/7b1f4508-324c-4ca9-9de4-0734f4ab05c6" />
 
 
+**Why I used text instead of processing audio directly**
+
+I intentionally chose to convert the recorded audio into text before sending it to the API. There are several important technical and architectural reasons for this decision:
+
+1. Grammar can be corrected in text easily
+
+It is difficult to correct grammar, sentence structure, or wording directly inside an audio file.
+To improve the language, you first need a textual representation.
+
+Audio → Text is required to:
+
+detect grammar mistakes
+
+improve sentence structure
+
+remove filler words
+
+rewrite unclear phrases
+
+2. Text-based correction is simpler, faster, and more reliable
+
+Working with text has major advantages:
+
+✔ faster to process
+✔ easier to analyze
+
+3. Corrected text can easily be converted back into clean audio
+
+After the grammatical correction, I can use a TTS engine (Text-to-Speech) to produce a clean corrected audio version.
+
+Benefits:
+
+consistent audio quality
+
+no background noises
+
+the corrected version is clearly understandable
+
+
+
+
 
 
