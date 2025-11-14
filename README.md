@@ -41,9 +41,7 @@ Express is a good fit for this kind of small REST API, and Multer made audio upl
 
 **Architecture Overview**
 
-User   →   Frontend (React)   →   Backend (Express)   →   LanguageTool API
-  ↑                      ↓                     ↓
-  └──────────── Corrected audio/text returned ─┘
+<img width="633" height="108" alt="Screenshot 2025-11-14 030445" src="https://github.com/user-attachments/assets/529d48d8-d8fe-4f84-aee1-9bd5569ac4eb" />
 
 
 **What actually happens:**
