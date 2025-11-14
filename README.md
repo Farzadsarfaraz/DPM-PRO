@@ -73,6 +73,11 @@ npm install
 npm run dev
 
 
+
+
+
+
+
 **Architecture Diagram**
  ┌──────────────────────────┐
  │        Frontend          │
